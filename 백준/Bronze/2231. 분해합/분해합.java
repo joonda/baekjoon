@@ -10,15 +10,15 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
         br.close();
 
-        for (int i=1; i<=N; i++) {
-            String str_num = String.valueOf(i);
-            int numberSum = 0;
-            for (int j=0; j<str_num.length(); j++) {
-                int number = str_num.charAt(j) - '0';
-                numberSum += number;
+        for (int i=Math.max(1, N-9*String.valueOf(N).length()); i<N; i++) {
+            int numberSum = i;
+            int temp = i;
+
+            while(temp > 0) {
+                numberSum += temp % 10;
+                temp /= 10;
             }
-            int decompositionSum = i + numberSum;
-            if (decompositionSum == N) {
+            if (numberSum == N) {
                 System.out.println(i);
                 return;
             }
