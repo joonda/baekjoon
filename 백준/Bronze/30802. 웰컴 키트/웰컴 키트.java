@@ -34,12 +34,12 @@ public class Main {
     }
 
     public static int convertShirtBundles(int shirtCount, int shirtBundle) {
-        int shirtbundle = shirtCount / shirtBundle;
+        int totalShirtBundles = shirtCount / shirtBundle;
         if ((shirtCount % shirtBundle) != 0) {
-            shirtbundle++;
+            totalShirtBundles++;
         }
 
-        return shirtbundle;
+        return totalShirtBundles;
     }
 
     public static int[] distributePens(int participants, int pens) {
