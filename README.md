@@ -1,2 +1,14 @@
-# baekjoon
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# Baekjoon
+백준 프로필 : www.acmicpc.net/user/hjoon19 <br>
+solved.ac : https://solved.ac/profile/hjoon19
+### 알고리즘 목록
+* **브루트 포스 알고리즘** <br>
+  현재 상황에서 지금 당장 좋은 것만 고르는 방법 <br>
+  매 순간 가장 최적의 답을 선택하여 적합한 결과를 도출하려는 것이다. <br>
+
+* **브루트 포스 알고리즘** <br>
+  조합 가능한 모든 문자열을 하나씩 대입해 보는 방식, 흔히 암호학에서 연구 하지만 경우의 수가 늘어날 수록 매우 비효율적이다. <br>
+
+* **투포인터** <br>
+  정렬된 배열에서 특정 조건을 만족하는 값을 빠르게 찾기 위해 사용하는 알고리즘 <br>
+  포인터(Index)를 배열의 양쪽 끝 또는 특정 위치에서 시작하고 조건에 따라 이동하면서 탐색 범위를 줄여나가는 방식 <br>
