@@ -2,7 +2,7 @@
 백준 프로필 : www.acmicpc.net/user/hjoon19 <br>
 solved.ac : https://solved.ac/profile/hjoon19
 ### 알고리즘 목록
-* **브루트 포스 알고리즘** <br>
+* **그리디 알고리즘** <br>
   현재 상황에서 지금 당장 좋은 것만 고르는 방법 <br>
   매 순간 가장 최적의 답을 선택하여 적합한 결과를 도출하려는 것이다. <br>
 
