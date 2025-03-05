@@ -10,6 +10,12 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // input n 확인
 		int n = Integer.parseInt(br.readLine());
+		
+		// 만약 n이 0이면, 평균을 구하는 의미가 없으므로, 0을 출력 후 종료 
+		if (n==0) {
+			System.out.println(0);
+			return;
+		}
         // 상위 15%, 하위 15%로 자를 기준
 		int percentage = (int)Math.round(n * 0.15);
         // Generic List 선언 후, list add
