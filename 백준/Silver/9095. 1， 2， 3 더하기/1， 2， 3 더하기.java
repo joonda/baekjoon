@@ -9,20 +9,19 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         int T = Integer.parseInt(br.readLine());
 
-        int[] arr = new int[10];
+        int[] arr = new int[11];
 
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 4;
-        arr[3] = 7;
+        arr[1] = 1;
+        arr[2] = 2;
+        arr[3] = 4;
 
-        for (int i=4; i<10; i++) {
+        for (int i=4; i<=10; i++) {
             arr[i] = arr[i-1] + arr[i-2] + arr[i-3];
         }
 
         for (int i=0; i<T; i++) {
             int n = Integer.parseInt(br.readLine());
-            sb.append(arr[n-1]).append("\n");
+            sb.append(arr[n]).append("\n");
         }
         System.out.println(sb);
     }
