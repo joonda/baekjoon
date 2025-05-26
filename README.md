@@ -18,3 +18,30 @@ solved.ac : https://solved.ac/profile/hjoon19
 * **투포인터** <br>
   정렬된 배열에서 특정 조건을 만족하는 값을 빠르게 찾기 위해 사용하는 알고리즘 <br>
   포인터(Index)를 배열의 양쪽 끝 또는 특정 위치에서 시작하고 조건에 따라 이동하면서 탐색 범위를 줄여나가는 방식 <br>
+
+* **최소공배수 (LCM), 최대공약수 (GCD)** <br>
+  최대공약수를 (GCD) 빠르게 구할 수 있는 방법 <br>
+
+  ```java
+  public static long getGCD(long a, long b) {
+    if (b == 0) {
+        return a;
+    }
+    return getGCD(b, a % b);
+  }
+  ```
+  * 해당 방법으로 간단하게 구할 수 있으나 재귀 방식으로 구하기 때문에 숫자가 커지게 되면 **오버플로우** 등의 문제가 발생한다.
+
+  ```java
+  public static int getGCD(int a, int b) {
+    while (b != 0) {
+      int temp = a % b;
+      a = b;
+      b = temp
+    }
+
+    return a;
+  }
+  ```
+  * 그래서 `while` 반복문 형태로 구할 수 있다.
+  * 재귀가 아니기 때문에 성능이 안정적이고 입력 수가 크거나 많은 경우 해당 방법을 사용. (`long` 형식으로 입력을 많이 받는 편.)
