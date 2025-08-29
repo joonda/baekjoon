@@ -1,19 +1,21 @@
+# 요세푸스 문제
+
 from collections import deque
 
 n, k = map(int, input().split())
-deque = deque()
+q = deque()
 
 for i in range(1, n+1):
-    deque.append(i)
+    q.append(i)
 
 print("<", end="")
 
-while len(deque) > 1:
-    for i in range(k):
-        num = deque.popleft()
-        deque.append(num)
+while len(q) > 1:
+    for i in range(k-1):
+        num = q.popleft()
+        q.append(num)
 
-    print(deque.pop(), end=", ")
+    print(q.popleft(), end=", ")
 
-print(deque.popleft(), end="")
+print(q.popleft(), end="")
 print(">")
