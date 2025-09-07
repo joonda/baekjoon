@@ -29,4 +29,4 @@ for qs in range(n):
 
 for i in range(k):
     dq.append(arr[i])
-    print(dq.popleft(), end=' ')
+    outputValue(str(dq.popleft()) + ' ')
