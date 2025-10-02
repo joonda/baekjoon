@@ -1,22 +1,17 @@
-# 칸토어 집합
+def cantor(n):
+	if n == 0:
+		print('-', end='')
+		return 
 
-import sys
-
-def cantor(a, n):
-    if n == 1:
-        return
-
-    for i in range(a + n // 3, a + (n // 3) * 2):
-        result[i] = ' '
-
-    cantor(a, n // 3)
-    cantor(a + (n // 3) * 2, n // 3)
+	cantor(n-1)
+	print(' ' * (3 ** (n-1)), end='')
+	cantor(n-1)
+	
 
 while True:
-    try:
-        N = int(sys.stdin.readline().strip())
-        result = ['-'] * (3 ** N)
-        cantor(0, 3 ** N)
-        print(''.join(result))
-    except:
-        break
+	try:
+		N = int(input())
+		cantor(N)
+		print()
+	except:
+		break
